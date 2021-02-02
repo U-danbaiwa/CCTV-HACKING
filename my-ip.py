@@ -1,4 +1,5 @@
 import requests, json
-me="https://www.whatismyip-address.com/?check"
+me="https://www.whatismyip-address.com/json"
 res=requests.get(me).json
-print(res)
+print(res["Decimal"])
+print(res["Organization"])
