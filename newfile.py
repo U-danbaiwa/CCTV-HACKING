@@ -33,7 +33,7 @@ if a=="1":
             headers=headers
         )
       find_ip = re.findall(r"http://\d+.\d+.\d+.\d+:\d+", res.text)
-        for ip in find_ip:
+      for ip in find_ip:
         print("\033[1;31m", ip)
    except:
     pass
@@ -58,7 +58,7 @@ elif a=="2":
         raise IndexError
 
     country = countries[num-1]
-	    res = requests.get(
+    res = requests.get(
         f"https://www.insecam.org/en/bycountry/{country}", headers=headers
     )
     last_page = re.findall(r'pagenavigator\("\?page=", (\d+)', res.text)[0]
