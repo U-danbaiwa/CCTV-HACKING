@@ -1,6 +1,26 @@
 import requests,re,colorama
 colorama.init()
-try:
+red = '\033[31m'
+yellow = '\033[93m'
+green = '\033[92m'
+clear = '\033[0m'
+bold = '\033[01m'
+cyan = '\033[96m'
+cy='\033[095m'
+cya='\033[095m'
+os.system("clear")
+os.system("figlet U-danbaiwa")
+print(green,"\t\t\tv1.0.0")
+print("\n\n")
+print(cyan,"1:-Hack Cctv Camera")
+print("")
+print(yellow,bold,"2:-Update Tool")
+print("")
+print(cy,bold,"3:-Exit")
+print("\n")
+cho=input(cya,bold,"Enter Option: ")      
+if cho=="1":
+  try:
     print()
     countries = ["US", "JP", "IT", "KR", "FR", "DE", "TW", "RU", "GB", "NL",
                  "CZ", "TR", "AT", "CH", "ES", "CA", "SE", "IL", "PL", "IR",
