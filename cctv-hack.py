@@ -36,7 +36,9 @@ if cho=="1":
   print(cya,"\t\tcoded by U-danbaiwa")
   print("\n")
   print(yellow,bold,"\t*********************************************")
-  print(cya,"CHOOSE PAGE FROM",yellow,"1",cya,"to",yellow," 4")
+  print("")
+  print(cya,bold,"CHOOSE PAGE FROM",yellow,"1",cya,"to",yellow," 4")
+  print("")
   print(bold,green,"\t*********************************************")
   print("")
   list=input("Enter Choice: ")
@@ -47,7 +49,7 @@ if cho=="1":
     print(green,"\t\t\tv 1.0.0")
     print(cya,"\t\tcoded by U-danbaiwa")
     print(green,"CHOOSE\n")
-    print(yellow,bold,"1:-United States\n2:-Mexico\n3:-Moldova\n4:-Japan\n5:-Finland\n5:-Nicaragua\n6:-Italy\n7:-China\n8:-Malta\n9:-Korea\n10:-Chile")
+    print(yellow,bold,"1:-United States\n 2:-Mexico\n 3:-Moldova\n 4:-Japan\n 5:-Finland\n 6:-Italy\n 7:-China\n 8:-Malta\n 9:-Korea\n 10:-Chile")
     try:
     
       countries= ["US", "JP", "IT", "KR", "FR", "DE", "TW", "RU", "GB", "NL","-"]
@@ -68,7 +70,7 @@ if cho=="1":
         )
         find_ip = re.findall(r"http://\d+.\d+.\d+.\d+:\d+", res.text)
         for ip in find_ip:
-            print("\033[1;31m", ip)
+            print(cyan,"CCTV IP HACKED",green,ip)
     except:
       pass
     finally:
@@ -91,6 +93,7 @@ if cho=="1":
     print(red,"8:-Hungary")
     print(cya,"9:-Cyprus")
     print(yellow,"10:-Russian Federation")
+    print("\n")
 			    
     try:
       coun= ["CZ", "TR", "AT", "CH", "ES", "CA", "SE", "IL", "PL", "IR","-"]
@@ -105,7 +108,7 @@ if cho=="1":
          res= requests.get(f"https://www.insecam.org/en/bycountry/{country}/?page={page}",headers=headers)
          find_ip = re.findall(r"http://\d+.\d+.\d+.\d+:\d+", res.text)
          for ip in find_ip:
-            print('\033[096m',"CCTV IP HACKED==>","\033[92m",'\033[01m',ip,green,"ACCESS GRANTED")
+            print('\033[096m',"CCTV IP HACKED==>","\033[92m",'\033[01m',green,ip,yellow,"<====)
     except:
       pass
     finally:
@@ -128,7 +131,7 @@ if cho=="1":
     print(red,"8:-Czeck Republic")
     print(cya,"9:-Ukraine")
     print(yellow,"10:-Kuwait")
-    print("")
+    print("\n")
     try:
       countries= ["NO", "RO", "IN", "VN", "BE", "BR", "BG", "ID", "DK", "AR","-"]
       headers= {"User-Agent": "Mozilla/5.0 (X11; Linux i686; rv:68.0) Gecko/20100101 Firefox/68.0"}
@@ -138,12 +141,12 @@ if cho=="1":
       	raise IndexError
       country = countries[num-1]
       res= requests.get(f"https://www.insecam.org/en/bycountry/{country}", headers=headers)
-      last_page2= re.findall(r'pagenavigator\("\?page=", (\d+)', res.text)[0]
-      for page in range(int(last_page2)):
+      last_page= re.findall(r'pagenavigator\("\?page=", (\d+)', res.text)[0]
+      for page in range(int(last_page)):
         res= requests.get(f"https://www.insecam.org/en/bycountry/{country}/?page={page}",headers=headers)
        	find_ip = re.findall(r"http://\d+.\+.\d+.\d+:\d+", res.text)
         for ip in find_ip:
-          print('\033[096m',"CCTV IP HACKED==>","\033[92m",'\033[01m',ip,green,"ACCESS GRANTED")
+          print('\033[096m',"CCTV IP HACKED==>","\033[92m",'\033[01m',ip,yellow,"<====")
     except:
       pass
     finally:
@@ -210,6 +213,7 @@ if cho=="1":
     print(red,"53:-denmark")
     print(cya,"54:-peru")
     print(yellow,"55:-Argentina")
+    print("\n")
 		    
     try:
      print()
@@ -220,6 +224,7 @@ if cho=="1":
                  "KW", "VE", "GE", "ME", "SV", "LU", "CW", "PR", "CR", "BY",
                  "AL", "LI", "BA", "PY", "PH", "FO", "GT", "NP", "PE", "UY","-"]
      headers= {"User-Agent": "Mozilla/5.0 (X11; Linux i686; rv:68.0) Gecko/20100101 Firefox/68.0"}
+  
      num= int(input("Choose Country: "))
      if num not in range(1, 55+1):
       raise IndexError
@@ -231,7 +236,7 @@ if cho=="1":
        res= requests.get(f"https://www.insecam.org/en/bycountry/{country}/?page={page}",headers=headers)
        find_ip = re.findall(r"http://\d+.\d+.\d+.\d+:\d+", res.text)
        for ip in find_ip:
-         print('\033[096m',"CCTV IP HACKED==>","\033[92m",'\033[01m',ip,green,"ACCESS GRANTED")		      
+         print('\033[096m',"CCTV IP HACKED==>","\033[92m",'\033[01m',ip,yellow,"<====")		      
 			
     except:
       pass
@@ -246,12 +251,12 @@ elif cho=="2":
 	os.system("pkg update -y")
 	os.system("pkg install -y git")
 	os.system("pkg install python2")
-	os.system("cd /data/data/com.termux/files/home && git clone https://github.com/U-danbaiwa/cctv-hacking.git")
+	os.system("cd /data/data/com.termux/files/home && git clone https://github.com/U-danbaiwa/CCTV-HACKING.git")
 	os.system("cd /data/data/com.termux/files/home")
 	print(cya+"\t=====COMPLETE INSTALL THANK YOU=====")
 if cho=="3":
-   time.sleep(3)
-   print(red,"see you letter!!!")
+   time.sleep(5)
+   print(red,"\t\t\tSEE YOU LETTER FROM U-DANBAIWA!!!")
    os.system("exit")
 else:
    print("Wrong Command")
