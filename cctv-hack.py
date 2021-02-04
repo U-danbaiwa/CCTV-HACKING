@@ -94,7 +94,7 @@ if cho=="1":
 			    
     try:
       coun= ["CZ", "TR", "AT", "CH", "ES", "CA", "SE", "IL", "PL", "IR","-"]
-			headers = {"User-Agent": "Mozilla/5.0 (X11; Linux i686; rv:68.0) Gecko/20100101 Firefox/68.0"}
+      headers = {"User-Agent": "Mozilla/5.0 (X11; Linux i686; rv:68.0) Gecko/20100101 Firefox/68.0"}
       num= int(input(cy,"Choose Country: "))
       if num not in range(1, 10+1):
       	raise IndexError
