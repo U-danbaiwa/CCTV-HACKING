@@ -14,7 +14,7 @@ try:
     coun= ["US", "JP", "IT", "KR", "FR", "DE", "TW", "RU", "GB", "NL",
                  "CZ", "TR"]
     headers = {"User-Agent": "Mozilla/5.0 (X11; Linux i686; rv:68.0) Gecko/20100101 Firefox/68.0"}
-	 num = int(input("OPTIONS : "))
+    num = int(input("OPTIONS : "))
     if num not in range(1, 12+1):
         raise IndexError
 
