@@ -107,10 +107,10 @@ if cho=="1":
          for ip in find_ip:
             print('\033[096m',"CCTV IP HACKED==>","\033[92m",'\033[01m',ip,green,"ACCESS GRANTED")
     except:
-        pass
+      pass
     finally:
-	#print("\033[1;37m")
-	exit() 
+      print("\033[1;37m")
+      exit() 
     	        
   if list=="3":
     os.system("clear")
@@ -145,10 +145,10 @@ if cho=="1":
         for ip in find_ip:
           print('\033[096m',"CCTV IP HACKED==>","\033[92m",'\033[01m',ip,green,"ACCESS GRANTED")
     except:
-	pass
+      pass
     finally:
-	#print("\033[1;37m")
-	exit()             
+      print("\033[1;37m")
+      exit()             
   if list=="4":
     os.system("clear")
     os.system("figlet CCTV-HACK")
@@ -234,10 +234,10 @@ if cho=="1":
     	print('\033[096m',"CCTV IP HACKED==>","\033[92m",'\033[01m',ip,green,"ACCESS GRANTED")		      
 			
     except:
-	pass
+      pass
     finally:
-  	#print("\033[1;37m")
-    	exit()
+      print("\033[1;37m")
+      exit()
 elif cho=="2":
 	os.system("clear")
 	os.system("figlet U-danbaiwa")
