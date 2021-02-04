@@ -70,7 +70,7 @@ if cho=="1":
         )
         find_ip = re.findall(r"http://\d+.\d+.\d+.\d+:\d+", res.text)
         for ip in find_ip:
-            print(cyan,"CCTV IP HACKED",green,ip)
+            print(cyan,"CCTV IP HACKED",green,ip,yellow,"<====")
     except:
       pass
     finally:
