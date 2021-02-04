@@ -36,14 +36,14 @@ if cho=="1":
   print(cya,"\t\tcoded by U-danbaiwa")
   print("\n")
   print(yellow,bold,"\t*********************************************")
-  print(cya,"CHOOSE PAGE FROM",yellow,"1",cya,"to",yellow," 5")
+  print(cya,"CHOOSE PAGE FROM",yellow,"1",cya,"to",yellow," 4")
   print(bold,green,"\t*********************************************")
   print("")
   list=input("Enter Choice: ")
   
   if list=="1":
     os.system("clear")
-    os.system("figlet CCTC-HACK")
+    os.system("figlet CCTV-HACK")
     print(green,"\t\t\tv 1.0.0")
     print(cya,"\t\tcoded by U-danbaiwa")
     print(green,"CHOOSE\n")
