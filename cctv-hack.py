@@ -109,7 +109,7 @@ if cho=="1":
     except:
         pass
     finally:
-	print("\033[1;37m")
+	#print("\033[1;37m")
 	exit() 
     	        
   if list=="3":
@@ -147,7 +147,7 @@ if cho=="1":
     except:
 	pass
     finally:
-	print("\033[1;37m")
+	#print("\033[1;37m")
 	exit()             
   if list=="4":
     os.system("clear")
@@ -236,7 +236,7 @@ if cho=="1":
     except:
 	pass
     finally:
-  	print("\033[1;37m")
+  	#print("\033[1;37m")
     	exit()
 elif cho=="2":
 	os.system("clear")
@@ -253,6 +253,8 @@ if cho=="3":
    time.sleep(3)
    print(red,"see you letter!!!")
    os.system("exit")
+else:
+   print("Wrong Command")
    
 
 
