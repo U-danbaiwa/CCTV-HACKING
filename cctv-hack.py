@@ -60,10 +60,10 @@ if cho=="1":
       last = re.findall(r'pagenavigator\("\?page=", (\d+)', res.text)[0]
 
       for page in range(int(last)):
-        res= requests.get(f"https://www.insecam.org/en/bycountry/{country}/?page={page}",headers=headers)
-      	find_ip= re.findall(r"http://\d+.\d+.\d+.\d+:\d+", res.text)
-        for ip in find_ip:
-          print('\033[096m',"CCTV IP HACKED==>","\033[92m",'\033[01m',ip,cya,"ACCESS GRANTED")
+         res= requests.get(f"https://www.insecam.org/en/bycountry/{country}/?page={page}",headers=headers)
+      	 find_ip = re.findall(r"http://\d+.\d+.\d+.\d+:\d+", res.text)
+         for ip in find_ip:
+            print("\033[1;31m", ip)
     except:
       pass
     finally:
