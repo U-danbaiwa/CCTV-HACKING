@@ -31,7 +31,7 @@ try:
         )
         find_ip = re.findall(r"http://\d+.\d+.\d+.\d+:\d+", res.text)
         for ip in find_ip:
-            print("\033[1;31m", ip)
+            print('\033[096m',"CCTV IP HACKED==>","\033[92m",'\033[01m',ip)
 except:
     pass
 finally:
