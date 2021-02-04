@@ -50,19 +50,19 @@ if cho=="1":
     		print(Yellow,bold,"1:-United States\n2:-Mexico\n3:-Moldova\n4:-Japan\n5:-Finland\n5:-Nicaragua\n6:-Italy\n7:-China\n8:-Malta\n9:-Korea\n10:-Chile")
 			
     		coun= ["US", "JP", "IT", "KR", "FR", "DE", "TW", "RU", "GB", "NL"]
-			head = {"User-Agent": "Mozilla/5.0 (X11; Linux i686; rv:68.0) Gecko/20100101 Firefox/68.0"}
+	        head = {"User-Agent": "Mozilla/5.0 (X11; Linux i686; rv:68.0) Gecko/20100101 Firefox/68.0"}
         	gat= int(input("Enter Country: "))
-       	 if gat not in range(1, 10+1):
-        		raise IndexError
-       	 country = coun[gat-1]
+       	        if gat not in range(1, 10+1):
+        	  raise IndexError
+       	        country = coun[gat-1]
         	res = requests.get(f"https://www.insecam.org/en/bycountry/{country}", headers=headers)
         	last = re.findall(r'pagenavigator\("\?page=", (\d+)', res.text)[0]
 
         	for page in range(int(last)):
-            	res2= requests.get(f"https://www.insecam.org/en/bycountry/{country}/?page={page}",headers=headers)
-            	find = re.findall(r"http://\d+.\d+.\d+.\d+:\d+", res.text)
-            	for ip in find:
-            		print('\033[096m',"CCTV IP HACKED==>","\033[92m",'\033[01m',ip,cya,"ACCESS GRANTED")
+            	   res2= requests.get(f"https://www.insecam.org/en/bycountry/{country}/?page={page}",headers=headers)
+            	   find = re.findall(r"http://\d+.\d+.\d+.\d+:\d+", res.text)
+            	   for ip in find:
+            	     print('\033[096m',"CCTV IP HACKED==>","\033[92m",'\033[01m',ip,cya,"ACCESS GRANTED")
         
 						
     	if list=="2":
@@ -84,18 +84,18 @@ if cho=="1":
     		coun1= ["CZ", "TR", "AT", "CH", "ES", "CA", "SE", "IL", "PL", "IR"]
         	headers1 = {"User-Agent": "Mozilla/5.0 (X11; Linux i686; rv:68.0) Gecko/20100101 Firefox/68.0"}
         	num1= int(input(cy,"Choose Country: "))
-      	  if num1 not in range(1, 10+1):
-        		raise IndexError
+      	        if num1 not in range(1, 10+1):
+        	  raise IndexError
         	country1= coun1[num1-1]
         	res2= requests.get(f"https://www.insecam.org/en/bycountry/{country}", headers=headers)
         	last_page1 = re.findall(r'pagenavigator\("\?page=", (\d+)', res.text)[0]
 
         	for page in range(int(last_page1)):
           	  res2= requests.get(f"https://www.insecam.org/en/bycountry/{country}/?page={page}",headers=headers)
-           	 find_ip1 = re.findall(r"http://\d+.\d+.\d+.\d+:\d+", res.text)
-           	 for ip in find_ip1:
-            		print('\033[096m',"CCTV IP HACKED==>","\033[92m",'\033[01m',ip,green,"ACCESS GRANTED")
-		if list=="3":
+           	  find_ip1 = re.findall(r"http://\d+.\d+.\d+.\d+:\d+", res.text)
+           	  for ip in find_ip1:
+            	    print('\033[096m',"CCTV IP HACKED==>","\033[92m",'\033[01m',ip,green,"ACCESS GRANTED")
+	if list=="3":
         	os.system("clear")
     		os.system("figlet CCTV-HACK")
     		print(green,"\t\t\tv 1.0.0")
@@ -116,19 +116,19 @@ if cho=="1":
     		headers2= {"User-Agent": "Mozilla/5.0 (X11; Linux i686; rv:68.0) Gecko/20100101 Firefox/68.0"}
 
     		num2 = int(input("Choose Country: "))
-  		  if num2 not in range(1, 10+1):
-        		raise IndexError
-			country = countries1[num2-1]
+  		if num2 not in range(1, 10+1):
+        	  raise IndexError
+		country = countries1[num2-1]
     		res2 = requests.get(f"https://www.insecam.org/en/bycountry/{country}", headers=headers)
     		last_page2= re.findall(r'pagenavigator\("\?page=", (\d+)', res.text)[0]
 
     		for page in range(int(last_page2)):
-        	res2 = requests.get(f"https://www.insecam.org/en/bycountry/{country}/?page={page}",headers=headers)
-       	 find_ip2 = re.findall(r"http://\d+.\d+.\d+.\d+:\d+", res.text)
-        	for ip in find_ip2:
-            	print('\033[096m',"CCTV IP HACKED==>","\033[92m",'\033[01m',ip,green,"ACCESS GRANTED")
-		if list=="4":
-			os.system("clear")
+        	  res2 = requests.get(f"https://www.insecam.org/en/bycountry/{country}/?page={page}",headers=headers)
+       	          find_ip2 = re.findall(r"http://\d+.\d+.\d+.\d+:\d+", res.text)
+        	  for ip in find_ip2:
+            	    print('\033[096m',"CCTV IP HACKED==>","\033[92m",'\033[01m',ip,green,"ACCESS GRANTED")
+	if list=="4":
+		os.system("clear")
     		os.system("figlet CCTV-HACK")
     		print(green,"\t\t\tv 1.0.0")
     		print(cya,"\t\tcoded by U-danbaiwa")
@@ -143,7 +143,7 @@ if cho=="1":
     		print(red,"8:-greece")
     		print(cya,"9:-montenegro")
     		print(yellow,"10:-Spain")
-    			print(red,"11:-Portugal")
+    		print(red,"11:-Portugal")
     		print(green,"12:-El Salvador")
     		print(yellow,"13:-Canada")
     		print(cya,"14:-Latvia")
@@ -173,7 +173,7 @@ if cho=="1":
     		print(red,"38:-Sloveania")
     		print(cya,"39:-Paraguay")
     		print(yellow,"40:-Belgium")
-    			print(cya,"41:-Ecuador")
+    		print(cya,"41:-Ecuador")
     		print(green,"42:-Philippines")
     		print(red,"43:-Brazil")
     		print(cya,"44:-Lithuania")
@@ -196,26 +196,26 @@ if cho=="1":
                  "MD", "NI", "MT", "IT", "SA", "HR", "CY", "PK", "AE", "KZ",
                  "KW", "VE", "GE", "ME", "SV", "LU", "CW", "PR", "CR", "BY",
                  "AL", "LI", "BA", "PY", "PH", "FO", "GT", "NP", "PE", "UY"]
-            headers3= {"User-Agent": "Mozilla/5.0 (X11; Linux i686; rv:68.0) Gecko/20100101 Firefox/68.0"}
+                headers3= {"User-Agent": "Mozilla/5.0 (X11; Linux i686; rv:68.0) Gecko/20100101 Firefox/68.0"}
 
     		num3= int(input("Choose Country: "))
   		  if num3 not in range(1, 10+1):
-        		raise IndexError
-			country = countries3[num3-1]
+        	    raise IndexError
+	        country = countries3[num3-1]
     		res3= requests.get(f"https://www.insecam.org/en/bycountry/{country}", headers=headers)
     		last_page3= re.findall(r'pagenavigator\("\?page=", (\d+)', res.text)[0]
 
     		for page in range(int(last_page3)):
-        	res3 = requests.get(f"https://www.insecam.org/en/bycountry/{country}/?page={page}",headers=headers)
-       	 find_ip3 = re.findall(r"http://\d+.\d+.\d+.\d+:\d+", res.text)
-        	for ip in find_ip3:
-            	print('\033[096m',"CCTV IP HACKED==>","\033[92m",'\033[01m',ip,green,"ACCESS GRANTED")		      
+        	  res3 = requests.get(f"https://www.insecam.org/en/bycountry/{country}/?page={page}",headers=headers)
+       	          find_ip3 = re.findall(r"http://\d+.\d+.\d+.\d+:\d+", res.text)
+        	  for ip in find_ip3:
+            	    print('\033[096m',"CCTV IP HACKED==>","\033[92m",'\033[01m',ip,green,"ACCESS GRANTED")		      
 			
 	except:
-		pass
+	  pass
 	finally:
-    	print("\033[1;37m")
-    	exit()
+    	  print("\033[1;37m")
+    	  exit()
 if cho=="2":
 	os.system("clear")
 	os.system("figlet U-danbaiwa")
@@ -226,7 +226,7 @@ if cho=="2":
 	os.system("pkg install python2")
 	os.system("cd /data/data/com.termux/files/home && git clone https://github.com/U-danbaiwa/cctv-hacking.git")
 	os.system("cd /data/data/com.termux/files/home")
-	 print(cya+"\t=====COMPLETE INSTALL THANK YOU=====")
+	print(cya+"\t=====COMPLETE INSTALL THANK YOU=====")
 if cho=="3":
    time.sleep(3)
    print(red,"see you letter!!!")
