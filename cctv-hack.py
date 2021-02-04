@@ -39,7 +39,7 @@ if cho=="1":
   print(cya,"CHOOSE PAGE FROM",yellow,"1",cya,"to",yellow," 5")
   print(bold,green,"\t*********************************************")
   print("")
-  list=input(cya,"Enter Choice: ")
+  list=input("Enter Choice: ")
   
   if list=="1":
     os.system("clear")
@@ -95,7 +95,7 @@ if cho=="1":
     try:
       coun= ["CZ", "TR", "AT", "CH", "ES", "CA", "SE", "IL", "PL", "IR","-"]
       headers = {"User-Agent": "Mozilla/5.0 (X11; Linux i686; rv:68.0) Gecko/20100101 Firefox/68.0"}
-      num= int(input(cy,"Choose Country: "))
+      num= int(input("Choose Country: "))
       if num not in range(1, 10+1):
       	raise IndexError
       country= coun[num-1]
