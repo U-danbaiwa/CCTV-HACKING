@@ -1,4 +1,5 @@
 import requests,re,colorama
+colorama.init()
 try:
     print()
     countries = ["US", "JP", "IT", "KR", "FR", "DE", "TW", "RU", "GB", "NL",
