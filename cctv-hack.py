@@ -50,19 +50,19 @@ if cho=="1":
     		print(Yellow,bold,"1:-United States\n2:-Mexico\n3:-Moldova\n4:-Japan\n5:-Finland\n5:-Nicaragua\n6:-Italy\n7:-China\n8:-Malta\n9:-Korea\n10:-Chile")
 			
     		coun= ["US", "JP", "IT", "KR", "FR", "DE", "TW", "RU", "GB", "NL"]
-			head = {"User-Agent": "Mozilla/5.0 (X11; Linux i686; rv:68.0) Gecko/20100101 Firefox/68.0"}
+		headers= {"User-Agent": "Mozilla/5.0 (X11; Linux i686; rv:68.0) Gecko/20100101 Firefox/68.0"}
         	gat= int(input("Enter Country: "))
-       	 if gat not in range(1, 10+1):
-        		raise IndexError
-       	 country = coun[gat-1]
+       	        if gat not in range(1, 10+1):
+        	  raise IndexError
+       	        country = coun[gat-1]
         	res = requests.get(f"https://www.insecam.org/en/bycountry/{country}", headers=headers)
         	last = re.findall(r'pagenavigator\("\?page=", (\d+)', res.text)[0]
 
         	for page in range(int(last)):
-            	res2= requests.get(f"https://www.insecam.org/en/bycountry/{country}/?page={page}",headers=headers)
-            	find = re.findall(r"http://\d+.\d+.\d+.\d+:\d+", res.text)
-            	for ip in find:
-            		print('\033[096m',"CCTV IP HACKED==>","\033[92m",'\033[01m',ip,cya,"ACCESS GRANTED")
+            	  res2= requests.get(f"https://www.insecam.org/en/bycountry/{country}/?page={page}",headers=headers)
+            	  find = re.findall(r"http://\d+.\d+.\d+.\d+:\d+", res.text)
+            	  for ip in find:
+            	    print('\033[096m',"CCTV IP HACKED==>","\033[92m",'\033[01m',ip,cya,"ACCESS GRANTED")
 except:
 	pass
 finally:
