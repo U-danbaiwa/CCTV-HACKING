@@ -47,7 +47,7 @@ if cho=="1":
     print(green,"\t\t\tv 1.0.0")
     print(cya,"\t\tcoded by U-danbaiwa")
     print(green,"CHOOSE\n")
-    print(Yellow,bold,"1:-United States\n2:-Mexico\n3:-Moldova\n4:-Japan\n5:-Finland\n5:-Nicaragua\n6:-Italy\n7:-China\n8:-Malta\n9:-Korea\n10:-Chile")
+    print(yellow,bold,"1:-United States\n2:-Mexico\n3:-Moldova\n4:-Japan\n5:-Finland\n5:-Nicaragua\n6:-Italy\n7:-China\n8:-Malta\n9:-Korea\n10:-Chile")
     try:
     
       countries= ["US", "JP", "IT", "KR", "FR", "DE", "TW", "RU", "GB", "NL","-"]
