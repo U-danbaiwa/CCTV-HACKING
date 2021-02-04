@@ -2,12 +2,12 @@
 import requests, re, colorama
 import os
 import sys
-import urrlib
-import httplib
-import urrlib2
-import json
+#import urrlib
+#import httplib
+#import urrlib2
+#import json
 import time
-import scan
+#import scan
 #colours requered
 colorama.init()
 red = '\033[31m'
