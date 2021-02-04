@@ -43,7 +43,17 @@ $ cd CCTV-HACKING
 $ python cctv-hack.py
 
 
-# CHOOSE YOUR OPTIONS TO HACK CCTV ANYEHERS BRO
+# HOW TO USE
+
+after choose option and country
+
+Just copy ip address of CCTV CAMERA and paste 
+It in your BROWSER YOU WILL BEGAN SEE CCTV
+you can stop it
+Or you can Resume it
+eTc
+But Just for educational purpose pls
+
 
 
 
