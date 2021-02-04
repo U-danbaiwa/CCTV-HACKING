@@ -2,10 +2,16 @@
 
 THIS TOOLA IT IS AMAZING BRO
 
-Wait
+#Wait...
+
+
 #FOR INSTALL THIS TOOL
 
+
+
 TYPE
+
+
 $ pkg update
 
 $ pkg upgrade
@@ -31,7 +37,13 @@ $ cd
 $ ls
 
 
-$ cd cctv-hack.py
+$ cd CCTV-HACKING
+
+
+$ python cctv-hack.py
 
 
 # CHOOSE YOUR OPTIONS TO HACK CCTV ANYEHERS BRO
+
+
+
