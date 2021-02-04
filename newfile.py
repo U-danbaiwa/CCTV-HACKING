@@ -1,7 +1,7 @@
 import requests,re,colorama
 import os
 import sys
-colorama.init()
+colorama.int()
 red = '\033[31m'
 yellow = '\033[93m'
 green = '\033[92m'
