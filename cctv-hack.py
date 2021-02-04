@@ -61,8 +61,8 @@ if cho=="1":
 
        for page in range(int(last)):
          res= requests.get(f"https://www.insecam.org/en/bycountry/{country}/?page={page}",headers=headers)
-      	 find = re.findall(r"http://\d+.\d+.\d+.\d+:\d+", res.text)
-         for ip in find:
+      	 find_ip= re.findall(r"http://\d+.\d+.\d+.\d+:\d+", res.text)
+         for ip in find_ip:
             print('\033[096m',"CCTV IP HACKED==>","\033[92m",'\033[01m',ip,cya,"ACCESS GRANTED")
     except:
 	pass
@@ -98,8 +98,8 @@ if cho=="1":
       last_page = re.findall(r'pagenavigator\("\?page=", (\d+)', res.text)[0]
       for page in range(int(last_page)):
          res= requests.get(f"https://www.insecam.org/en/bycountry/{country}/?page={page}",headers=headers)
-         find_ip1 = re.findall(r"http://\d+.\d+.\d+.\d+:\d+", res.text)
-         for ip in find_ip1:
+         find_ip = re.findall(r"http://\d+.\d+.\d+.\d+:\d+", res.text)
+         for ip in find_ip:
             print('\033[096m',"CCTV IP HACKED==>","\033[92m",'\033[01m',ip,green,"ACCESS GRANTED")
     except:
         pass
@@ -136,8 +136,8 @@ if cho=="1":
       last_page2= re.findall(r'pagenavigator\("\?page=", (\d+)', res.text)[0]
       for page in range(int(last_page2)):
         res= requests.get(f"https://www.insecam.org/en/bycountry/{country}/?page={page}",headers=headers)
-       	find_ip2 = re.findall(r"http://\d+.\+.\d+.\d+:\d+", res.text)
-        for ip in find_ip2:
+       	find_ip = re.findall(r"http://\d+.\+.\d+.\d+:\d+", res.text)
+        for ip in find_ip:
           print('\033[096m',"CCTV IP HACKED==>","\033[92m",'\033[01m',ip,green,"ACCESS GRANTED")
     except:
 	pass
@@ -224,8 +224,8 @@ if cho=="1":
 
      for page in range(int(last_page3)):
         res= requests.get(f"https://www.insecam.org/en/bycountry/{country}/?page={page}",headers=headers)
-    	find_ip3 = re.findall(r"http://\d+.\d+.\d+.\d+:\d+", res.text)
-    	for ip in find_ip3:
+    	find_ip = re.findall(r"http://\d+.\d+.\d+.\d+:\d+", res.text)
+    	for ip in find_ip:
     	print('\033[096m',"CCTV IP HACKED==>","\033[92m",'\033[01m',ip,green,"ACCESS GRANTED")		      
 			
     except:
