@@ -20,6 +20,7 @@ print(cy,bold,"3:-Exit")
 print("\n")
 cho=input(cya,bold,"Enter Option: ")      
 if cho=="1":
+  
   try:
     print()
     countries = ["US", "JP", "IT", "KR", "FR", "DE", "TW", "RU", "GB", "NL",
@@ -52,8 +53,8 @@ if cho=="1":
         find_ip = re.findall(r"http://\d+.\d+.\d+.\d+:\d+", res.text)
         for ip in find_ip:
             print("\033[1;31m", ip)
-except:
+  except:
     pass
-finally:
+  finally:
     print("\033[1;37m")
     exit()
